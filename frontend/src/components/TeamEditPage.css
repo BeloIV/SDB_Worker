@@ -1,0 +1,341 @@
+.team-edit-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px 0;
+}
+
+.team-edit-page .container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  margin-top: 20px;
+}
+
+/* Login sekcia */
+.login-section {
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.login-section h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.login-note {
+  color: #7f8c8d;
+  margin-bottom: 25px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.login-form {
+  margin-bottom: 30px;
+}
+
+.login-form .form-group {
+  margin-bottom: 25px;
+}
+
+.login-form .form-input {
+  font-size: 18px;
+  padding: 16px 20px;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.login-form .btn {
+  font-size: 18px;
+  padding: 16px 40px;
+  min-width: 200px;
+}
+
+/* Edit content */
+.edit-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section {
+  background: #f8f9fa;
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.section h2 {
+  color: #2c3e50;
+  margin-bottom: 25px;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+/* Edit forms */
+.edit-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.edit-form .form-group {
+  margin-bottom: 20px;
+}
+
+.edit-form .btn {
+  width: 100%;
+  font-size: 16px;
+  padding: 14px;
+  margin-top: 10px;
+}
+
+/* Status grid */
+.status-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.status-item h3 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.member-list,
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.member-list li,
+.task-list li {
+  background: white;
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.task-list li {
+  padding: 16px;
+}
+
+.task-list li strong {
+  color: #3498db;
+  font-size: 1.1rem;
+}
+
+.task-people-count {
+  color: #e67e22;
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+.task-list li p {
+  margin: 8px 0 0 0;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+
+/* Warning message */
+.warning-message {
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 6px;
+  padding: 15px;
+  margin: 20px 0;
+  color: #856404;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .team-edit-page .container {
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  .section {
+    padding: 20px;
+  }
+  
+  .status-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .edit-form {
+    max-width: 100%;
+  }
+}
+
+/* Help text */
+.help-text {
+  font-size: 14px;
+  color: #666;
+  margin-top: 8px;
+  font-style: italic;
+}
+
+/* Member management */
+.member-item {
+  padding: 16px !important;
+}
+
+.member-display,
+.member-edit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.member-name {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.member-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.member-edit-input {
+  flex: 1;
+  margin: 0;
+}
+
+.btn-small {
+  padding: 8px 16px;
+  font-size: 14px;
+  min-width: 80px;
+}
+
+.btn-danger {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #c0392b;
+}
+
+.btn-success {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #229954;
+}
+
+/* Task management */
+.task-item {
+  padding: 16px !important;
+}
+
+.task-display {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.task-name {
+  color: #3498db;
+  font-size: 1.1rem;
+  flex: 1;
+}
+
+.task-people-count {
+  color: #e67e22;
+  font-weight: 600;
+  font-size: 1rem;
+  background: #f8f9fa;
+  padding: 4px 8px;
+  border-radius: 4px;
+  min-width: 40px;
+  text-align: center;
+}
+
+.task-time-slot {
+  color: #9b59b6;
+  font-weight: 600;
+  font-size: 0.9rem;
+  background: #f0f8ff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  min-width: 50px;
+  text-align: center;
+  border: 1px solid #d6eaf7;
+}
+
+.task-deleted-badge {
+  color: #e74c3c;
+  font-weight: 600;
+  font-size: 0.8rem;
+  background: #fdf2f2;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid #fecaca;
+  text-transform: uppercase;
+}
+
+.deleted-task {
+  opacity: 0.7;
+  background: #f8f9fa;
+  border-color: #dee2e6;
+}
+
+.deleted-task .task-name {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+.task-description {
+  margin: 0;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  font-weight: normal;
+  line-height: 1.4;
+}
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+/* Popup actions */
+.popup-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #e9ecef;
+}
+
+.popup-actions .btn {
+  min-width: 100px;
+}

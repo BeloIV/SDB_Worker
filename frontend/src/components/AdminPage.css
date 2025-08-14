@@ -1,0 +1,192 @@
+.admin-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px 0;
+}
+
+.admin-page .container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  margin-top: 20px;
+}
+
+/* Login sekcia */
+.login-section {
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.login-section h2 {
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+
+.login-form {
+  margin-bottom: 30px;
+}
+
+.login-form .form-group {
+  margin-bottom: 25px;
+}
+
+.login-form .form-input {
+  font-size: 18px;
+  padding: 16px 20px;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.login-form .btn {
+  font-size: 18px;
+  padding: 16px 40px;
+  min-width: 200px;
+}
+
+/* Admin content */
+.admin-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section {
+  background: #f8f9fa;
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.section h2 {
+  color: #2c3e50;
+  margin-bottom: 25px;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+/* Team form */
+.team-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.team-form .form-group {
+  margin-bottom: 25px;
+}
+
+.team-form .btn {
+  width: 100%;
+  font-size: 18px;
+  padding: 16px;
+}
+
+/* Team created */
+.team-created {
+  text-align: center;
+  padding: 20px;
+}
+
+.team-created h3 {
+  color: #27ae60;
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+}
+
+.team-credentials {
+  background: white;
+  border: 2px solid #27ae60;
+  border-radius: 8px;
+  padding: 25px;
+  margin: 25px 0;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.credential-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.credential-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.credential-item strong {
+  color: #2c3e50;
+  font-size: 1.1rem;
+}
+
+.credential-value {
+  background: #27ae60;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-family: 'Courier New', monospace;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.credential-note {
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 6px;
+  padding: 15px;
+  margin: 20px 0;
+  color: #856404;
+}
+
+.credential-note p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.action-buttons .btn {
+  min-width: 200px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .admin-page .container {
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  .section {
+    padding: 20px;
+  }
+  
+  .credential-item {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .action-buttons .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
