@@ -40,7 +40,7 @@ services:
     environment:
       # This ensures the dev server rebuilds on code changes
       - WATCHPACK_POLLING=true
-      - REACT_APP_API_URL=http://localhost:8000/api
+      - REACT_APP_API_URL=https://sdbworker_backend.salezianipresov.xyz/api
     depends_on:
       - backend
     networks:

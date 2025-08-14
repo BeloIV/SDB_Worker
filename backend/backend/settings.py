@@ -37,7 +37,12 @@ SECRET_KEY = os.getenv('SECRET_KEY', "")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG', 'True').lower() == 'true'
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    'sdbworker_backend.salezianipresov.xyz',
+    'localhost',
+    '127.0.0.1',
+    '0.0.0.0',
+]
 
 
 # Application definition
@@ -104,6 +109,14 @@ DATABASES = {
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
 
+CORS_ALLOWED_ORIGINS = [
+    "https://sdb_worker.salezianipresov.xyz",
+    "http://localhost:3000",  # Keep for local development
+]
+
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    r"^https://.*\.salezianipresov\.xyz$",
+]
 # REST Framework settings
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
