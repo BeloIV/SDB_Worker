@@ -19,6 +19,7 @@
 .env.test.local
 .env.production.local
 .env
+.env.example
 
 .idea
 
@@ -28,3 +29,4 @@ yarn-error.log*
 
 backend/team_manager/migrations/*
 backend/teams/migrations/*
+frontend/node_modules/*

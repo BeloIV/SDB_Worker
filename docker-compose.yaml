@@ -4,7 +4,7 @@ services:
     env_file:
       - ./.env
     ports:
-      - "5432:5432"
+      - "0.0.0.0:5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
     networks:
@@ -20,7 +20,7 @@ services:
     volumes:
       - ./backend:/app
     ports:
-      - "8000:8000"
+      - "0.0.0.0:8000:8000"
     depends_on:
       db:
         condition: service_healthy
@@ -34,13 +34,13 @@ services:
   frontend:
     build: ./frontend
     ports:
-      - "3000:3000"
+      - "0.0.0.0:3000:3000"
     stdin_open: true # For React dev server
     tty: true # For React dev server
     environment:
       # This ensures the dev server rebuilds on code changes
       - WATCHPACK_POLLING=true
-      - REACT_APP_API_URL=http://backend:8000/api
+      - REACT_APP_API_URL=http://localhost:8000/api
     depends_on:
       - backend
     networks:
