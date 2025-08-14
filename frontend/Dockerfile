@@ -7,7 +7,9 @@ RUN npm install
 
 COPY . .
 
+RUN npm run build
+RUN npm install -g serve
+
 EXPOSE 3000
 
-# Use npm start for development
-CMD ["npm", "start"]
+CMD ["serve", "-s", "build"]

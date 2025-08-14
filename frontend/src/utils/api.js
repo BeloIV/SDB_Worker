@@ -34,6 +34,17 @@ export const apiRequest = async (endpoint, options = {}) => {
       headers,
     });
 
+    // Check if response is ok
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    // Check if response has content
+    const contentType = response.headers.get('content-type');
+    if (!contentType || !contentType.includes('application/json')) {
+      throw new Error('Response is not JSON');
+    }
+
     const data = await response.json();
     return data;
   } catch (error) {
